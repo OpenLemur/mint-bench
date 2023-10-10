@@ -84,17 +84,17 @@ EVALUATED_MODEL_LIST = [
     #     },
     # },
     # LLaMA2
-    # {
-    #     "agent_class": "LLaMA2LMAgent",
-    #     "config": {
-    #         "model_name": "Llama-2-7b-chat-hf",
-    #         "chat_mode": True,
-    #         "max_tokens": 512,
-    #         "temperature": 0.0,
-    #         "openai.api_base": "<YOUR_API_BASE>",
-    #         "add_system_message": False,
-    # },
-    # },
+    {
+        "agent_class": "VLLMAgent",
+        "config": {
+            "model_name": "Llama-2-70b-chat-hf",
+            "chat_mode": True,
+            "max_tokens": 512,
+            "temperature": 0.0,
+            "openai.api_base": "http://localhost:8000/v1",
+            "add_system_message": False,
+    },
+    },
     # {
     #     "agent_class": "VLLMAgent",
     #     "config": {
@@ -282,17 +282,17 @@ EVALUATED_MODEL_LIST = [
     #         "add_system_message": False,
     #     },
     # },
-    # {
-    #     "agent_class": "VLLMAgent",
-    #     "config": {
-    #         "model_name": "CodeLlama-34b-Instruct-hf",
-    #         "chat_mode": True,
-    #         "max_tokens": 512,
-    #         "temperature": 0.0,
-    #         "openai.api_base": "<YOUR_API_BASE>",
-    #         "add_system_message": False,
-    #     },
-    # },
+    {
+        "agent_class": "VLLMAgent",
+        "config": {
+            "model_name": "code-llama-34b-instruct-hf",
+            "chat_mode": True,
+            "max_tokens": 512,
+            "temperature": 0.0,
+            "openai.api_base": "http://localhost:8001/v1",
+            "add_system_message": False,
+        },
+    },
     # {
     #     "agent_class": "ClaudeLMAgent",
     #     "config": {
